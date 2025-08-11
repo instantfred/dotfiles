@@ -1,0 +1,14 @@
+[alias]
+    s = status
+    cm = commit -m
+    co = checkout
+    gl = config --global -l
+    unstage = reset HEAD --
+    p = push
+
+    # Show a compact, one-line log with graph and decorations (branches, tags)
+    lg = log --graph --pretty=format:'%C(auto)%h%d %s %C(green)(%ar) %C(bold blue)<%an>%C(reset)' --abbrev-commit
+    # An even shorter version
+    lol = log --oneline --decorate --graph
+    # See the history of a specific file, including renames
+    filelog = log --follow -p --
