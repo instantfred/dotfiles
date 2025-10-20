@@ -38,6 +38,8 @@ return {
         "prismals",
         "pyright",
       },
+      -- Workaround: disable automatic enabling which requires newer Neovim APIs (vim.lsp.enable)
+      automatic_enable = false,
     })
 
     mason_tool_installer.setup({
