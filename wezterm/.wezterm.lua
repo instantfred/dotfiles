@@ -10,7 +10,7 @@ config.color_scheme = "Catppuccin Mocha"
 
 -- config.font = wezterm.font("MesloLGS Nerd Font Mono")
 config.font = wezterm.font("Maple Mono")
-config.font_size = 18
+config.font_size = 16
 
 config.enable_tab_bar = true
 
@@ -18,6 +18,10 @@ config.window_decorations = "RESIZE"
 
 config.window_background_opacity = 0.95
 config.macos_window_background_blur = 10
+
+-- Set initial window size (wide format)
+config.initial_cols = 140
+config.initial_rows = 35
 
 -- and finally, return the configuration to wezterm
 return config
